@@ -1,118 +1,145 @@
-/* ====== General Reset ====== */
+/* =========================
+   GLOBAL STYLE
+========================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* ====== Body ====== */
 body {
-    background-color: #fffaf3;
-    color: #333;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* ====== Header ====== */
+/* =========================
+   HEADER (layout untouched)
+========================= */
 header {
-    background-color: #ff7a00;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-bottom: 2px solid #f0f0f0;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 header div:first-child {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff7b00;
+  letter-spacing: 0.5px;
 }
 
-/* ====== Navigation Links ====== */
+/* Header Links */
 header a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.8rem;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 header a:hover {
-    color: #ffdfb5;
-    transform: scale(1.1);
+  color: #fff;
+  background-color: #ff7b00;
 }
 
-/* ====== Main Content ====== */
+/* =========================
+   MAIN CONTENT
+========================= */
 main {
-    flex: 1;
-    padding: 2rem;
-    text-align: center;
+  text-align: center;
+  padding: 50px 10%;
 }
 
-main h1, main h2, main h3, main h4 {
-    color: #ff7a00;
-    margin-bottom: 1rem;
+main h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+main h4 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 main p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+  font-size: 1.05rem;
+  margin: 10px 0;
+  color: #555;
 }
 
-/* ====== Links inside main ====== */
-main a {
-    display: inline-block;
-    color: #ff7a00;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0.5rem;
-    transition: all 0.3s ease;
+/* Buttons & Links */
+a {
+  color: #ff7b00;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-main a:hover {
-    color: #fff;
-    background-color: #ff7a00;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
+a:hover {
+  color: #e66a00;
 }
 
-/* ====== Image Links ====== */
-main img {
-    margin-top: 10px;
-    border-radius: 6px;
-    transition: transform 0.3s ease;
+a img {
+  margin: 15px 0;
+  transition: transform 0.3s ease;
 }
 
-main img:hover {
-    transform: scale(1.05);
+a img:hover {
+  transform: scale(1.05);
 }
 
-/* ====== Footer ====== */
+/* Headings inside main */
+main h2 {
+  color: #ff7b00;
+  margin: 30px 0 15px;
+  font-size: 1.5rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+  background-color: #fff;
+  border-top: 2px solid #f0f0f0;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 50px;
+  color: #777;
+  font-size: 0.9rem;
 }
 
-/* ====== Responsive Design ====== */
+footer:hover {
+  background-color: #ff7b00;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    header div {
-        margin: 0.5rem 0;
-    }
+  header div:nth-child(2) {
+    margin-top: 10px;
+  }
 
-    main {
-        padding: 1rem;
-    }
+  main {
+    padding: 30px 5%;
+  }
 }
