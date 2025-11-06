@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="submit.php">
+        <div>
+            <label for ="name">Name</label>
+            <input type="text" placeholder="Enter name">
+        </div>
+        <div>
+            <label for ="Phone">Phone</label>
+            <input type="tel" placeholder="Enter phone number">
+        </div>
+        <div>
+            <label for ="email">Email</label>
+            <input type="email" placeholder="Enter email" required>
+        </div>
+        <div>
+            <label for ="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" required>
+        </div>
+        <!-- select -->
+        <div>
+            <label for ="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select your</option>
+                <option value="male">Male</option>
+                <option value=" female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+                <!-- Radio button -->
+        <div>
+            <label>Choose your subscription:</label>
+            <input type="radio" name="subscription" value="free" checked> Free
+            <input type="radio" name="subscription" value="premium"> Premium
+            <input type="radio" name="subscription" value="pro"> Pro
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <label>Select your interests:</label>
+            <input type="checkbox" name="interest" value="coding"> Coding
+            <input type="checkbox" name="interest" value="music"> Music
+            <input type="checkbox" name="interest" value="sports"> Sports
+        </div>
+        <!-- textarea -->
+        <div>
+            <label for="about">About You:</label>
+            <textarea id="about" rows="4" cols="50" placeholder="Tell us about yourself"></textarea>
+        </div>
+        <!-- Buttons -->
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
