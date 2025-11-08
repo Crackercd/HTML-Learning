@@ -83,7 +83,8 @@ main p {
 /* Buttons & Links */
 a {
   
-  color: #99958a;
+  color: #ff7700;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: 500;
